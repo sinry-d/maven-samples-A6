@@ -23,6 +23,8 @@ pipeline {
         sh 'mvn verify'
         sh 'mvn test'
         sh 'mvn clean'
+
+        sh 'git bisect reset HEAD'
       }
     }
 
